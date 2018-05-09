@@ -19,7 +19,6 @@ def progress_bar(time):
         sleep(1)
 
 def write_file(line):
-    # os.chdir('/home/not_root/')
     with open('hosts_list', 'at') as f:
         f.writelines(line)
     f.close()
